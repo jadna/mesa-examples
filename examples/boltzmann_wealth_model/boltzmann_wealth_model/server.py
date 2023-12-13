@@ -12,7 +12,7 @@ def agent_portrayal(agent):
     else:
         portrayal["Color"] = "grey"
         portrayal["Layer"] = 1
-        portrayal["r"] = 0.2
+        portrayal["r"] = 0.78
     return portrayal
 
 

@@ -65,8 +65,8 @@ if run:
     )
     for i in range(num_ticks):
         model.step()
-        my_bar.progress((i / num_ticks), text="Simulation progress")
-        placeholder.text("Step = %d" % i)
+        my_bar.progress(((i+1) / num_ticks), text="Simulation progress")
+        placeholder.text("Step = %d" % (i+1))
         for cell in model.grid.coord_iter():
             cell_content, (x, y) = cell
             agent_count = len(cell_content)
